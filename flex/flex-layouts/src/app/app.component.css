@@ -1,7 +1,9 @@
 .align{
-    
-    width: 100%;
+
+    width: 100.7%;
     height: 700px;
-    object-fit: contain;
+    object-fit: cover;
+    display: block;
+    margin: -7.6px;
 }
 
