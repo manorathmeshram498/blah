@@ -1,5 +1,6 @@
+  
 <div fxLayout="column">
-    <div *ngFor="let item of pics" class="photo">
-        <img [src]="item">
-    </div>
+  <div *ngFor="let item of pics" class="photo" [ngStyle]="{'background-image' :'url(' + item + ')'}">
+      <!-- <img [src]="item"> -->
+  </div>
 </div>
