@@ -1,14 +1,5 @@
-
-
-
-<div  fxLayout="column"  >
- 
-
-	
-	<div  *ngFor="let item of pics">
-    <img class="align" src={{item}} >
-    
-  </div>
-	
+<div fxLayout="column">
+    <div *ngFor="let item of pics" class="photo">
+        <img [src]="item">
+    </div>
 </div>
-

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "flex-layouts"
+    }
+  },
+  "defaultProject": "flex-layouts",
+  "cli": {
+    "analytics": "47b1a335-a0c6-4369-ad88-60ca395524c2"
+  }
 }
