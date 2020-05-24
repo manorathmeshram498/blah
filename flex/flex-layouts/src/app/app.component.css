@@ -42,12 +42,13 @@
 /* } */
 .name{
     margin: 28% 0% 0% 4% ;
-    font-size: 250%;
+    font-size: 4vh;
+    font-size: 2vw;
     color: black;
     background-color: whitesmoke;
     height: 9%;
     width: 19%;
-    text-align: center;
-    padding-top: 1%;
+    
+   
     
 }
