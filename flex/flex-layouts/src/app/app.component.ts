@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'flex-layouts';
   pics = [
-    '/assets/w1.jpeg',
-    '/assets/eso.jpg',
-    '/assets/w1.jpeg',
-    '/assets/jumbotron_1200.jpg',
+    {img: '/assets/w1.jpeg', name :'Roadtrips'},
+    {img: '/assets/eso.jpg', name:'Junoon'},
+    {img:'/assets/w1.jpeg', name: 'Dj war'},
+    {img:'/assets/jumbotron_1200.jpg', name:'carryminati'}
   ];
 }
