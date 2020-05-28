@@ -23,14 +23,14 @@
 
 .photo {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     /* overflow: hidden; */
     /* object-fit: cover; */
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
     will-change: background-position;
-    transition: all 0s ease-in-out;
+    
     background-attachment: fixed;
 }
 
@@ -54,4 +54,15 @@
     background-color: whitesmoke;
     height: 9%;
     width: 19%;
+
+    cursor: pointer;
+
+    transition: all .3s ease-out;
 }
+section:hover {
+    transform: translate(-5% , -5%);
+    background-color: tomato;
+    
+}
+
+
