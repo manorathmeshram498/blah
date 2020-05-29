@@ -10,10 +10,10 @@ export class AppComponent {
   t = 0;
   h = window.innerHeight;
   pics = [
-    { img: '/assets/w1.jpeg', name: 'Roadtrips' },
-    { img: '/assets/eso.jpg', name: 'Junoon' },
-    { img: '/assets/aftermovie.jpeg', name: 'Dj war' },
-    { img: '/assets/jumbotron_1200.jpg', name: 'carryminati' },
+    { img: '/assets/w1.jpeg', name: 'Roadtrips' ,color:' #66ffcc' },
+    { img: '/assets/eso.jpg', name: 'Junoon', color: '#ff8533' },
+    { img: '/assets/aftermovie.jpeg', name: 'Dj war', color:'#ff6666' },
+    { img: '/assets/jumbotron_1200.jpg', name: 'carryminati' ,color: '#ffbb33'},
   ];
 
   @HostListener('window:scroll') scroll() {

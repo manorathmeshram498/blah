@@ -1,7 +1,9 @@
 <div fxLayout="column" class="wrapper" #wrapper>
     <div *ngFor="let item of pics; let i = index" class="photo" [ngStyle]="{'background-image' :'url(' + item.img + ')', 'background-position': 'center ' + (i*50 - t)  + 'vh' + '!important'}">
         <!-- <img [src]="item.img"> -->
-        <div class="div">
+        <div class="div" [ngStyle]="{'background-color': item.color}"  >
+             
+            
             <section fxLayoutAlign="center center"  class="name">{{item.name}}</section>
         </div> 
     </div>
