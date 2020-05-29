@@ -45,23 +45,30 @@
 
 
 /* } */
-
-.name {
+.div{
     margin: 28% 0% 0% 4%;
+    height: 9%;
+    width: 19%;
+    background-color: turquoise;
+}
+.name {
+    
     font-size: 4vh;
     font-size: 2vw;
     color: black;
     background-color: whitesmoke;
-    height: 9%;
-    width: 19%;
+    height: 100%;
+
 
     cursor: pointer;
 
-    transition: all .3s ease-out;
+    transition: all .5s ease-in-out;
 }
-section:hover {
-    transform: translate(-5% , -5%);
-    background-color: tomato;
+
+.photo:hover  .name{
+    transform: translate(-3%, -15% );
+    
+    
     
 }
 
