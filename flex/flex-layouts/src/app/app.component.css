@@ -46,7 +46,7 @@
 
 /* } */
 .div{
-    margin: 28% 0% 0% 4%;
+    margin: 34% 0% 0% 4%;
     height: 9%;
     width: 19%;
     
@@ -72,5 +72,80 @@
     
     
 }
+/* for 1200 to 800*/ 
 
+@media only screen and (max-width: 1200px)  and (min-width: 800px)  {
+    .name {
+        font-size: 28vh;
+        font-size: 4vw;
+        color: black;
+        background-color: whitesmoke;
+        height: 100%;
+    
+    
+        cursor: pointer;
+    
+        transition: all .5s ease-in-out;
+      
+    }
 
+    .div{
+        margin: 50% 0% 0% 9%;
+        height: 8%;
+        width: 20%;
+        
+        
+    }
+  }
+/* for 799 to 400*/
+
+  @media only screen and (max-width: 799px)  and (min-width: 400px)  {
+    .name {
+        font-size: 28vh;
+        font-size: 4vw;
+        color: black;
+        background-color: whitesmoke;
+        height: 100%;
+    
+    
+        cursor: pointer;
+    
+        transition: all .5s ease-in-out;
+      
+    }
+
+    .div{
+        margin: 85% 0% 0% 9%;
+        height: 8%;
+        width: 30%;
+        
+        
+    }
+  }
+
+/* for below  400*/
+
+  @media only screen and (max-width: 399px)  {
+    .name {
+        font-size: 38vh;
+        font-size: 6vw;
+        color: black;
+        background-color: whitesmoke;
+        height: 100%;
+    
+    
+        cursor: pointer;
+    
+        transition: all .5s ease-in-out;
+      
+    }
+
+    .div{
+        margin: 140% 0% 0% 10%;
+        height: 8%;
+        width: 30%;
+        
+        
+    }
+
+}
