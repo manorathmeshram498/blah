@@ -102,7 +102,7 @@
   @media only screen and (max-width: 799px)  and (min-width: 400px)  {
     .name {
         font-size: 28vh;
-        font-size: 4vw;
+        font-size: 8vw;
         color: black;
         background-color: whitesmoke;
         height: 100%;
@@ -115,12 +115,16 @@
     }
 
     .div{
-        margin: 85% 0% 0% 9%;
-        height: 8%;
-        width: 30%;
+        margin: 120% 0% 0% 9%;
+        height: 10%;
+        width: 85%;
         
         
     }
+    .photo{
+        background-position: center;
+    }
+
   }
 
 /* for below  400*/
