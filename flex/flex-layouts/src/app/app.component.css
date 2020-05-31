@@ -128,7 +128,7 @@
   @media only screen and (max-width: 399px)  {
     .name {
         font-size: 38vh;
-        font-size: 6vw;
+        font-size: 8vw;
         color: black;
         background-color: whitesmoke;
         height: 100%;
@@ -141,9 +141,9 @@
     }
 
     .div{
-        margin: 100% 0% 0% 9%;
-        height: 8%;
-        width: 30%;
+        margin: 125% 0% 0% 9%;
+        height: 9%;
+        width: 85%;
         
     }
 
