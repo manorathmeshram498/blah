@@ -99,7 +99,36 @@
   }
 /* for 799 to 400*/
 
-  @media only screen and (max-width: 799px)  and (min-width: 400px)  {
+  @media only screen and (max-width: 799px)  and (min-width: 600px)  {
+    .name {
+        font-size: 28vh;
+        font-size: 8vw;
+        color: black;
+        background-color: whitesmoke;
+        height: 100%;
+    
+    
+        cursor: pointer;
+    
+        transition: all .5s ease-in-out;
+      
+    }
+
+    .div{
+        margin: 75% 0% 0% 9%;
+        height: 10%;
+        width: 85%;
+        
+        
+    }
+    .photo{
+        background-position: center;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 599px)  and (min-width: 400px)  {
     .name {
         font-size: 28vh;
         font-size: 8vw;
