@@ -141,11 +141,14 @@
     }
 
     .div{
-        margin: 140% 0% 0% 10%;
+        margin: 100% 0% 0% 9%;
         height: 8%;
         width: 30%;
         
-        
+    }
+
+    .photo{
+        background-position: center;
     }
 
 }
