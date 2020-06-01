@@ -1,187 +1,39 @@
-/* .align{ */
-
-
-/*  */
-
-
-/* width: 100.7%; */
-
-
-/* height: 700px; */
-
-
-/* object-fit: cover; */
-
-
-/* display: block; */
-
-
-/* margin: -7.6px; */
-
-
-/* } */
-
 .photo {
     width: 100%;
     height: 80vh;
-    /* overflow: hidden; */
-    /* object-fit: cover; */
+    background-position: center;
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
     will-change: background-position;
-    
     background-attachment: fixed;
+    padding-bottom: 5vh;
+    padding-left: 3vw;
 }
 
-
-/* .photo img { */
-
-
-/* width: 100%; */
-
-
-/* object-fit: cover; */
-
-
-/* } */
-.div{
-    margin: 34% 0% 0% 4%;
+.div {
     height: 9%;
     width: 19%;
-    
-    
 }
+
 .name {
-    
     font-size: 4vh;
-    font-size: 2vw;
     color: black;
     background-color: whitesmoke;
     height: 100%;
-
-
     cursor: pointer;
-
     transition: all .5s ease-in-out;
 }
 
-.photo:hover  .name{
-    transform: translate(-3%, -15% );
-    
-    
-    
+.photo:hover .name {
+    transform: translate(-3%, -15%);
 }
-/* for 1200 to 800*/ 
 
-@media only screen and (max-width: 1200px)  and (min-width: 800px)  {
-    .name {
-        font-size: 28vh;
-        font-size: 4vw;
-        color: black;
-        background-color: whitesmoke;
-        height: 100%;
-    
-    
-        cursor: pointer;
-    
-        transition: all .5s ease-in-out;
-      
+@media only screen and (max-width: 540px) {
+    .photo {
+        padding-left: 0;
     }
-
-    .div{
-        margin: 50% 0% 0% 9%;
-        height: 8%;
-        width: 20%;
-        
-        
+    .div {
+        width: 90vw;
     }
-  }
-/* for 799 to 400*/
-
-  @media only screen and (max-width: 799px)  and (min-width: 600px)  {
-    .name {
-        font-size: 28vh;
-        font-size: 8vw;
-        color: black;
-        background-color: whitesmoke;
-        height: 100%;
-    
-    
-        cursor: pointer;
-    
-        transition: all .5s ease-in-out;
-      
-    }
-
-    .div{
-        margin: 75% 0% 0% 9%;
-        height: 10%;
-        width: 85%;
-        
-        
-    }
-    .photo{
-        background-position: center;
-    }
-
-  }
-
-
-  @media only screen and (max-width: 599px)  and (min-width: 400px)  {
-    .name {
-        font-size: 28vh;
-        font-size: 8vw;
-        color: black;
-        background-color: whitesmoke;
-        height: 100%;
-    
-    
-        cursor: pointer;
-    
-        transition: all .5s ease-in-out;
-      
-    }
-
-    .div{
-        margin: 120% 0% 0% 9%;
-        height: 10%;
-        width: 85%;
-        
-        
-    }
-    .photo{
-        background-position: center;
-    }
-
-  }
-
-/* for below  400*/
-
-  @media only screen and (max-width: 399px)  {
-    .name {
-        font-size: 38vh;
-        font-size: 8vw;
-        color: black;
-        background-color: whitesmoke;
-        height: 100%;
-    
-    
-        cursor: pointer;
-    
-        transition: all .5s ease-in-out;
-      
-    }
-
-    .div{
-        margin: 125% 0% 0% 9%;
-        height: 9%;
-        width: 85%;
-        
-    }
-
-    .photo{
-        background-position: center;
-    }
-
 }
