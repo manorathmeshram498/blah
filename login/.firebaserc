@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "login-form-e5048"
+  },
+
+  "targets": {
+    "nyx-19-test": {
+      "hosting": {
+        "login": [
+          "nyx-19-test"
+        ]
+      }
+    }
   }
 }
