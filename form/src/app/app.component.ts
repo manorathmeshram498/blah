@@ -31,6 +31,11 @@ export class AppComponent {
   };
 
 
-  show: boolean = false;
-  title = 'form';
+
+
+  show = false;
+//  (click)="show = !show"
+title = 'form';
 }
+
+
