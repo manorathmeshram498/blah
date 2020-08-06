@@ -9,33 +9,34 @@
 
     <mat-form-field class="example-full-width">
       <mat-label>Mobile Number</mat-label>
-      <input matTooltip="10 digits"  matInput placeholder="" value="" required minlength="10"  name="mobile_no" [(ngModel)]="user.mobile_no"  #mobile_no="ngModel" required>
+      <input matTooltip="10 digits"  matInput placeholder="" value="" required minlength="10" maxlength="10"  name="mobile_no" [(ngModel)]="user.mobile_no"  #mobile_no="ngModel" required>
       <mat-error *ngIf= "mobile_no.errors?.required">mobile number is required</mat-error>
-      <mat-error *ngIf="mobile_no.errors.minlength"> Name must be at least 10 characters long.</mat-error>
+      <mat-error *ngIf="mobile_no.errors.minlength"> Mobile number must be at least 10 characters long.</mat-error>
+      <mat-error *ngIf="mobile_no.errors.maxlength"> Mobile number must be at least 10 characters long.</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Email </mat-label>
       <input   matInput placeholder="Ex. xyz@gmail.com" value="" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  [(ngModel)]="user.email"  #email="ngModel" required>
-      <mat-error *ngIf= "email.errors?.required">email is required</mat-error>
+      <mat-error *ngIf= "email.errors?.required">Email is required</mat-error>
       <mat-error *ngIf="email.errors?.pattern"> This is not a valid Email </mat-error>
       
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Instagram ID</mat-label>
-      <input matTooltip=""  matInput placeholder="If greater than 50k confirmation required" value="">
+      <input matTooltip=""  matInput placeholder="" value="">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>No. of Followers on Instagram </mat-label>
-      <input matTooltip=""  matInput placeholder="If greater than 50k confirmation required" value="">
+      <input matTooltip=""  matInput placeholder="" value="">
     </mat-form-field>
 
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label> Date Of Birth</mat-label>
       <input matTooltip="month/date/year"  matInput [matDatepicker]="picker"  name="date_of_birth" [(ngModel)]="user.date_of_birth"  #date_of_birth="ngModel" required>
-      <mat-error *ngIf= "date_of_birth.errors?.required">date of birth is required</mat-error>
+      <mat-error *ngIf= "date_of_birth.errors?.required">Date of birth is required</mat-error>
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
@@ -44,7 +45,7 @@
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Gender</mat-label>
       <mat-select  name="gender" [(ngModel)]="user.gender"  #gender="ngModel" required>
-        <mat-error *ngIf= "gender.errors?.required">gender is required</mat-error>
+        <mat-error *ngIf= "gender.errors?.required">Gender is required</mat-error>
         <mat-option value="option">Male</mat-option>
         <mat-option value="option">Female</mat-option>
         <mat-option value="option">Other</mat-option>
@@ -54,7 +55,7 @@
 
     <p >
       <mat-checkbox  type="checkbox" name="show" [(ngModel)]="show">
-        student
+        Student
       </mat-checkbox>
       
     </p>
@@ -113,26 +114,27 @@
     <mat-form-field class="example-full-width">
       <mat-label>Address </mat-label>
       <input matInput placeholder="plot no. etc" value="" name="address" [(ngModel)]="user.address"  #address="ngModel" required>
-      <mat-error *ngIf= "address.errors?.required">address is required</mat-error>
+      <mat-error *ngIf= "address.errors?.required">Address is required</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-      <mat-label>city </mat-label>
+      <mat-label>City </mat-label>
       <input matInput placeholder="Ex. Kanpur" value="" name="city" [(ngModel)]="user.city"  #city="ngModel" required>
-      <mat-error *ngIf= "city.errors?.required">city is required</mat-error>
+      <mat-error *ngIf= "city.errors?.required">City is required</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-      <mat-label>state </mat-label>
+      <mat-label>State </mat-label>
       <input matInput placeholder="Ex. Uttarpradesh" value="" name="state" [(ngModel)]="user.state"  #state="ngModel" required>
-      <mat-error *ngIf= "state.errors?.required">state is required</mat-error>
+      <mat-error *ngIf= "state.errors?.required">State is required</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-      <mat-label>pincode </mat-label>
-      <input matTooltip="6 digits" required minlength="6"  matInput placeholder="" value="" value="" name="pincode" [(ngModel)]="user.pincode"  #pincode="ngModel" required>
+      <mat-label>Pincode </mat-label>
+      <input matTooltip="6 digits" required minlength="6" maxlength="6"  matInput placeholder="" value="" value="" name="pincode" [(ngModel)]="user.pincode"  #pincode="ngModel" required>
       <mat-error *ngIf= "pincode.errors?.required">pincode is required</mat-error>
-      <mat-error *ngIf="pincode.errors.minlength"> Name must be at least 6 characters long.</mat-error>
+      <mat-error *ngIf="pincode.errors.minlength"> Pincode must be at least 6 characters long.</mat-error>
+      <mat-error *ngIf="pincode.errors.maxlength"> Pincode must be at least 6 characters long.</mat-error>
     </mat-form-field>
 
     <section class="button">

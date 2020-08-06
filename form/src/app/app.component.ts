@@ -8,7 +8,7 @@ import {FormControl} from '@angular/forms';
 })
 export class AppComponent {
 
-  lines = [];
+
   submitted = false;
   user = {
     name: '',
