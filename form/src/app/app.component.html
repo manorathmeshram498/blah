@@ -1,1 +1,136 @@
-<app-profile-editor></app-profile-editor>
+<div class="body">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      
+      <input matTooltip="Full Name" matInput placeholder="Ex. Sham" value="" name="name" [(ngModel)]="user.name"  #name="ngModel" required>
+      <mat-error *ngIf= "name.errors?.required">Name is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Mobile Number</mat-label>
+      <input matTooltip="10 digits"  matInput placeholder="" value=""  name="mobile_no" [(ngModel)]="user.mobile_no"  #mobile_no="ngModel" required>
+      <mat-error *ngIf= "mobile_no.errors?.required">mobile number is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Email </mat-label>
+      <input   matInput placeholder="Ex. xyz@gmail.com" value="" name="email" [(ngModel)]="user.email"  #email="ngModel" required>
+      <mat-error *ngIf= "email.errors?.required">email is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Instagram ID</mat-label>
+      <input matTooltip="If greater than 50k confirmation required"  matInput placeholder="If greater than 50k confirmation required" value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label> Date Of Birth</mat-label>
+      <input matTooltip="month/date/year"  matInput [matDatepicker]="picker"  name="date_of_birth" [(ngModel)]="user.date_of_birth"  #date_of_birth="ngModel" required>
+      <mat-error *ngIf= "date_of_birth.errors?.required">date of birth is required</mat-error>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <br>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Gender</mat-label>
+      <mat-select  name="gender" [(ngModel)]="user.gender"  #gender="ngModel" required>
+        <mat-error *ngIf= "gender.errors?.required">gender is required</mat-error>
+        <mat-option value="option">Male</mat-option>
+        <mat-option value="option">Female</mat-option>
+        <mat-option value="option">Other</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+
+    <h4>Select either one of the below</h4>
+    <p>
+      <mat-checkbox  (click)="show = !show" >Student </mat-checkbox>
+    </p>
+    <div *ngIf = "show; else elseBlock" >
+      <mat-form-field  class="example-full-width" appearance="fill">
+        
+        <mat-label>College</mat-label>
+        
+        <input  matInput placeholder="" value="">
+        
+      </mat-form-field>
+
+      
+
+      <mat-form-field  class="example-full-width" appearance="fill">
+        
+        <mat-label>Class/Year</mat-label>
+        
+        <input  matInput placeholder="" value="">
+              
+      </mat-form-field>
+    </div>
+    
+    <ng-template #elseBlock>
+      <mat-form-field  class="example-full-width" appearance="fill">
+        <mat-label>Profession</mat-label>
+        
+        <input  matInput placeholder="" value="">
+        
+      </mat-form-field>    
+    </ng-template>
+    
+
+
+    <br>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Language</mat-label>
+      <mat-select>
+        <mat-option value="option">Hindi</mat-option>
+        <mat-option value="option">English</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field class="example-full-width" id="assoc">
+      <mat-label>Any previous association with Antaragni</mat-label>
+      <input matTooltip="Text" matInput placeholder="" value="">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width" id="assoc">
+      <mat-label>Any previous association with any company in Digital or Network Marketing</mat-label>
+      <input matTooltip="Text" matInput placeholder="" value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Address </mat-label>
+      <input matInput placeholder="plot no. etc" value="" name="address" [(ngModel)]="user.address"  #address="ngModel" required>
+      <mat-error *ngIf= "address.errors?.required">address is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>city </mat-label>
+      <input matInput placeholder="Ex. Kanpur" value="" name="city" [(ngModel)]="user.city"  #city="ngModel" required>
+      <mat-error *ngIf= "city.errors?.required">city is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>state </mat-label>
+      <input matInput placeholder="Ex. Uttarpradesh" value="" name="state" [(ngModel)]="user.state"  #state="ngModel" required>
+      <mat-error *ngIf= "state.errors?.required">state is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>pincode </mat-label>
+      <input matTooltip="6 digits"  matInput placeholder="" value="" value="" name="pincode" [(ngModel)]="user.pincode"  #pincode="ngModel" required>
+      <mat-error *ngIf= "pincode.errors?.required">pincode is required</mat-error>
+    </mat-form-field>
+
+    <section class="button">
+      
+      <div class="example-button-row">
+        <button mat-flat-button color="primary">Submit</button>
+        
+      </div>
+    </section>
+
+  </form>
+</div>
+<router-outlet></router-outlet>
