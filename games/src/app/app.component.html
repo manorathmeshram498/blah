@@ -1,0 +1,30 @@
+
+<div *ngFor="let item of games" class="body" >
+  <mat-card  class="inner-box" >
+    <div fxLayout="row" class="wrapper" class="desc" #wrapper >
+      {{item.task_no}}) {{item.description}}
+    </div>
+    
+    <div fxLayout="row" class="second-row"  >
+      <div fxLayout="column" fxLayoutAlign="center center"  class="points">
+        Points:{{item.points}}
+      </div>
+      
+      <div fxLayout="column"  fxLayoutAlign="center center" class="button">
+              
+        <button mat-flat-button color="primary" >Submit</button>
+        
+      </div>
+    </div>
+  </mat-card>
+    
+</div>
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
